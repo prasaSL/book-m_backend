@@ -5,8 +5,8 @@ import { User } from '../schemas/user.schema';
 @InputType()
 export class LoginUserInput {
   @Field()
-  @IsEmail() // Ensures the email is valid
-  email: string;
+ 
+  username: string;
 
   @Field()
   @IsNotEmpty() // Ensures the password is not empty

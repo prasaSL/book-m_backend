@@ -6,8 +6,8 @@ import { isNullableType } from 'graphql';
 export class RegisterUserInput {
 
   @Field()
-  @IsEmail() // Ensures the email is valid
-  email: string;
+
+  username: string;
 
   @Field()
   @IsNotEmpty() // Ensures the password is not empty
