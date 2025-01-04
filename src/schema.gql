@@ -12,7 +12,7 @@ type Book {
 
 type User {
   id: ID!
-  email: String!
+  username: String!
   password: String!
   role: String!
 }

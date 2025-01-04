@@ -40,7 +40,7 @@ export class AuthService {
       throw new UnauthorizedException('Invalid credentials');
     }
   
-    const payload = { username: user.email, sub: user._id, roles: user.role };
+    const payload = { username: user.username, sub: user._id, roles: user.role };
     const accessToken = this.jwtService.sign(payload);
   
     // Convert to object and remove password field

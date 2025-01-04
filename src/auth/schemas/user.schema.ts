@@ -12,7 +12,7 @@ export class User {
 
   @Field()
   @Prop({ required: true, unique: true })
-  email: string;
+  username: string;
 
   @Field()
   @Prop({ required: true })
