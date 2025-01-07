@@ -5,7 +5,7 @@ import { User } from '../schemas/user.schema';
 @InputType()
 export class LoginUserInput {
   @Field()
- 
+ @IsNotEmpty() // Ensures the username is not empty
   username: string;
 
   @Field()
