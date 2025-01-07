@@ -45,7 +45,6 @@ export class AuthService {
   
     // Convert to object and remove password field
     const userObject = user.toObject();
-    delete userObject.password;
     userObject.id = userObject._id; // Map _id to id
     delete userObject.password;
     delete userObject._id; // Remove _id field
