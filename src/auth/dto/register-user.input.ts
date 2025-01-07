@@ -6,7 +6,7 @@ import { isNullableType } from 'graphql';
 export class RegisterUserInput {
 
   @Field()
-
+  @IsNotEmpty()
   username: string;
 
   @Field()
